@@ -1,4 +1,13 @@
+{% load static %}
 <html>
-	<title>Titulo </title>
-    <div>{{ profesores }}</div>
+	<title>titulo</title>
+	<head>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/luma.css' %}">
+</head>
+<body>
+	{% for profesor in profesores %} {{ profesor }}{% endfor %}<p> 
+	 <a href="https://www.dracotienda.com">Dracotienda</a>
+</body>
 </html>
