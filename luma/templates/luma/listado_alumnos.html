@@ -1,0 +1,8 @@
+{% load static %}
+<html>
+	<title>Listado Alumno</title>
+<body>
+	{% for alumno in alumnos %} {{ alumno.nombre }} {{alumno.curso}} {{alumno.centro}} <p></p> {% endfor %}<p>
+	 <a href="https://www.dracotienda.com">Dracotienda</a>
+</body>
+</html>
